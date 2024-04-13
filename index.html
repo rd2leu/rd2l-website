@@ -7,8 +7,17 @@
 </head>
 <style>
 html, body {
-    height: 100%; 
-    margin: 0; 
+	margin: 0;
+	margin-top: 10px;
+	min-height: calc(100vh - 100px);
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	justify-content: space-between;
+	gap: 10px;
+}
+.container {
+	width: 100%;
 }
 div {
 	display: block;
@@ -21,7 +30,7 @@ div {
 h1 {
 	padding: 1vw;
 	margin: 0;
-    font-size: 6vw;
+	font-size: 6vw;
 }
 p {
 	text-align: center;
@@ -31,10 +40,6 @@ p {
 	font-size: 2vw;
 }
 a {
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
-    transform: translateX(-50%);
 	background: #921723;
 	color: #ffffff;
 	text-decoration: none;
@@ -43,30 +48,35 @@ a {
 	font-size: 3vw;
 }
 img {
+	width: 100%;
 	max-width: 250px;
 }
 @media (max-width: 600px) {
-    h1 {
-        font-size: 12vw;
-    }
-    p {
+	h1 {
+		font-size: 12vw;
+	}
+	p {
 		width: 90%;
-        font-size: 5vw;
-    }
-    a {
-        padding: 4vw 6vw;
+		font-size: 5vw;
+	}
+	a {
+		padding: 4vw 6vw;
 		border-radius: 2vw;
 		font-size: 6vw;
-    }
+	}
 	img {
 		max-width: 200px;
 	}
 }
 </style>
 <body>
-<div><h1>RD2L EU</h1></div>
-<div><img src="rd2l_pride.png" alt="rd2l_pride"></div>
-<div><p>RD2L is a community-organized Dota 2 league for players of every skill level that want to play in an environment that differs greatly from the average pub experience.</p></div>
-<div><a href="https://discord.gg/5JzxZaRF4j">Discord link</a></div>
+<div class="container">
+	<div><h1>RD2L EU</h1></div>
+	<div><img src="rd2l_pride.png" alt="rd2l_pride"></div>
+	<div><p>RD2L is a community-organized Dota 2 league for players of every skill level that want to play in an environment that differs greatly from the average pub experience.</p></div>
+</div>
+<div class="container">
+	<div><a href="https://discord.gg/5JzxZaRF4j">Discord link</a></div>
+</div>
 </body>
 </html>
